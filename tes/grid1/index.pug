@@ -1,0 +1,58 @@
+.main-content.printed
+	.header 
+		span Attendee Information Form
+		span Your Conference Badge
+	.id__wrapper
+		.deco
+		label.your-face(id="image-form" for="image-input")
+			input(type='file' id="image-input")
+			div.image-persuader Upload Image Here
+			img(id="imager" src="#" alt="Your Image Here")
+		.name
+			label Full Name
+			textarea.full
+		.job
+			label Job Title
+			input.full
+		.country
+			label Location
+			input.full
+		.twitter
+			label Twitter
+			input.full(value="@")
+		.codepen
+			label Codepen
+			input.full(value="@")
+		.blood
+			label Your Expertise
+			div.checkbox__wrapper
+				.checkbox
+					input(id="design" type="checkbox" value="1" checked)
+					label.label-check(for="design") Design
+				.checkbox
+					input(id="front-end" type="checkbox" value="2")
+					label.label-check(for="front-end") Front-end Dev
+				.checkbox
+					input(id="product" type="checkbox" value="3")
+					label.label-check(for="product") Product
+				.checkbox
+					input(id="other" type="checkbox" value="4")
+					label.label-check(for="other") Other
+
+aside.context
+	.explanation
+		.js-switch Click me
+		br
+		| Click the button to toggle between a form and a badge.
+		br
+		| Part of the 
+		a(href="https://codepen.io/collection/DQvYpQ/" target="_blank") CSS Grid collection here
+		| .
+
+footer
+	a(href="https://twitter.com/meowlivia_" target="_blank")
+		i.icon-social-twitter.icons
+	a(href="https://github.com/oliviale" target="_blank")
+		i.icon-social-github.icons
+	a(href="https://dribbble.com/oliviale" target="_blank")
+		i.icon-social-dribbble.icons
